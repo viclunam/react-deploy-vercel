@@ -1,6 +1,6 @@
 // GET , POST, PUT, DELETE --> HTTP
 
-const URL_API = import.meta.env.BASE_URL_API ?? "";
+const URL_API = "https://react-deploy-vercel-two.vercel.app";
 
 console.log(URL_API);
 
