@@ -5,11 +5,11 @@ const App = () => {
   const [data, setData] = useState<Record<string, any>[]>([]);
   const [selectProduct, setSelectProduct] = useState<Record<string, any>>();
 
-  // useEffect(() => {
-  //   fetcher.get("/products").then((res) => {
-  //     setData(res);
-  //   });
-  // }, []);
+  useEffect(() => {
+    fetcher.get("/products").then((res) => {
+      setData(res);
+    });
+  }, []);
 
   const handleSelectProduct =
     (product: Record<string, any>) =>
